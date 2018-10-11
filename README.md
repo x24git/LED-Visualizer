@@ -1,6 +1,8 @@
 LED-Visualizer
 =====================
 
+### See the it in action: [Youtube](https://youtu.be/LZCFWtzixfM)
+
 A processing sketch that performs an FFT (using the Minim library) to visualize music in real time on an LED strip (AdaFruit NeoPixel) controlled via Arduino.
 It also displays a live spectrograph of the audio including the current primary color. The spectrograph is composed of multiple frequency buckets each assigned a hue which you can rotate in the GUI. The bucket that has the highest response is sent via UART to the Arduino. The Arduino is primarily set to perform an ambient seeking pattern until it recieves a signal over UART from the processing program. Once data is recieved, the arduino will start a ripple or wave effect where the color propogates through the strip over time.
 
